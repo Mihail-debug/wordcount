@@ -11,6 +11,10 @@ func main() {
 	var input string
 	input = os.Args[1]
 	strs := strings.Split(input, " ")
-	count = len(strs)
+	for _, el := range strs {
+		if el != "" {
+			count += 1
+		}
+	}
 	fmt.Println(count)
 }
